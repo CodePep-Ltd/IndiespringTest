@@ -1,9 +1,9 @@
 package com.indiespring.test.presenters
 
 import com.indiespring.test.data.Bitcoin
-import com.indiespring.test.views.BitcoinListView
+import com.indiespring.test.views.IBitcoinListView
 
-class BitcoinListPresenter(private var view: BitcoinListView?) : IBitcoinListPresenter {
+class BitcoinListPresenter(private var view: IBitcoinListView?) : IBitcoinListPresenter {
     override fun orderByRankAndPresent(items: List<Bitcoin>) {
         if (items.isEmpty()) {
             view?.onEmptyList()

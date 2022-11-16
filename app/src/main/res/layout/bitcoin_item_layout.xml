@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bitcoin_list_cell_height"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:clickable="true">
+        <ImageView
+            android:id="@+id/list_image_active"
+            android:layout_width="@dimen/bitcoin_list_image_size"
+            android:layout_height="@dimen/bitcoin_list_image_size"
+            android:layout_margin="@dimen/bitcoin_list_common_padding"
+            android:layout_gravity="center"/>
+            <LinearLayout
+                android:padding="@dimen/bitcoin_list_common_padding"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/mainText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizePresetSizes="@array/autosize_text_sizes"
+                    tools:text="Full name of Bitcoin currency"/>
+                <TextView
+                    android:id="@+id/subText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bitcoin_list_common_padding"
+                    android:textColor="@color/black"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizePresetSizes="@array/autosize_text_sizes"
+                    tools:text="Full name of Bitcoin currency"/>
+            </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
